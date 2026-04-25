@@ -1,0 +1,28 @@
+intelligence:
+  - ChatGPT
+  - Claude
+  - Gemini
+
+memory:
+  - Notion
+  - Airtable
+  - Google Drive
+  - Obsidian
+
+orchestration:
+  - Zapier
+  - Make
+  - n8n
+
+execution:
+  - Gmail
+  - Slack
+  - Buffer
+  - Metricool
+  - Google Calendar
+  - HubSpot
+
+human_approval:
+  - Notion approval field
+  - Gmail draft review
+  - Slack approval message

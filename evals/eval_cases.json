@@ -1,0 +1,42 @@
+[
+  {
+    "id": "musician_growth",
+    "example": "musician",
+    "input": "I am an independent musician with an EP launch, scattered content ideas, messy assets, and no repeatable fan growth system.",
+    "expected_verdicts": ["BUILD NOW"],
+    "required_tools": ["ChatGPT", "Notion", "Buffer", "Gmail"],
+    "expected_score_min": 3.5,
+    "expected_score_max": 4.2,
+    "required_sections": ["diagnosis", "stack", "workflows", "implementation", "score_rationales", "prompts"]
+  },
+  {
+    "id": "solo_founder_ops",
+    "example": "founder",
+    "input": "I am a solo founder losing track of commitments, follow-ups, investor updates, and customer notes across email and meetings.",
+    "expected_verdicts": ["BUILD NOW"],
+    "required_tools": ["Claude", "ChatGPT", "Notion", "Gmail", "Google Calendar"],
+    "expected_score_min": 3.5,
+    "expected_score_max": 4.2,
+    "required_sections": ["diagnosis", "stack", "workflows", "implementation", "score_rationales", "prompts"]
+  },
+  {
+    "id": "sales_prep",
+    "example": "sales",
+    "input": "Our reps need account prep from HubSpot, Gmail, calendar, and docs before discovery calls without manually assembling everything.",
+    "expected_verdicts": ["MANUAL FIRST", "BUILD NOW"],
+    "required_tools": ["HubSpot", "Gmail", "Google Calendar"],
+    "expected_score_min": 2.9,
+    "expected_score_max": 3.7,
+    "required_sections": ["diagnosis", "stack", "workflows", "implementation", "score_rationales", "prompts"]
+  },
+  {
+    "id": "internal_reporting",
+    "example": "reporting",
+    "input": "Every Friday our reporting process is slow, copied from Slack and docs, and leadership still cannot tell what changed.",
+    "expected_verdicts": ["MANUAL FIRST", "BUILD NOW"],
+    "required_tools": ["Claude", "Airtable", "Slack"],
+    "expected_score_min": 2.8,
+    "expected_score_max": 3.5,
+    "required_sections": ["diagnosis", "stack", "workflows", "implementation", "score_rationales", "prompts"]
+  }
+]

@@ -1,0 +1,61 @@
+# Musician Growth // Stack Engine Output
+
+## Input
+I am an independent musician with a new EP coming out. I have scattered ideas for TikToks, a half-built email list, a messy Google Drive, and no repeatable way to turn content into fan growth without spending every day online.
+
+## Diagnosis
+The real problem is not content volume. It is the missing operating loop between creative ideas, campaign memory, scheduled execution, and human approval. The stack should turn messy release-week energy into a repeatable fan-growth machine without removing the artist's voice.
+
+## Recommended Stack
+- **Intelligence:** ChatGPT
+- **Memory:** Notion, Google Drive
+- **Orchestration:** Zapier
+- **Execution:** Buffer, Gmail
+- **Human Approval:** Notion approval field, Gmail draft review
+
+## Workflows
+### 1. Content Idea Intake
+- **Trigger:** Artist drops rough captions, voice notes, lyrics, or links into a Notion inbox.
+- **Steps:** Classify the idea by release phase; Generate three platform-specific angles; Attach source files from Google Drive; Mark each asset as draft, approved, or parked.
+- **Human Check:** Artist approves the angle in Notion before anything is scheduled.
+
+### 2. Release Calendar Builder
+- **Trigger:** A Notion item moves to approved.
+- **Steps:** Convert the idea into a post brief; Place it in the release calendar; Prepare Buffer-ready captions; Flag missing visuals or links.
+- **Human Check:** Artist reviews the weekly queue before Zapier pushes posts to Buffer.
+
+### 3. Fan Follow-Up Loop
+- **Trigger:** A campaign post or email receives meaningful engagement.
+- **Steps:** Capture replies and comments; Summarize recurring fan language; Draft a warm email-list follow-up; Store learning against the campaign record.
+- **Human Check:** Artist reviews Gmail drafts before sending.
+
+## Implementation Plan
+1. Create a Notion database for ideas, assets, approvals, channels, and release phase.
+2. Organize Google Drive folders by release, asset type, and final approval status.
+3. Build a reusable ChatGPT prompt for turning raw ideas into campaign-ready briefs.
+4. Connect Notion approved items to Buffer drafts through Zapier.
+5. Create a Gmail draft workflow for engaged fans and email-list segments.
+6. Run one release week manually, then automate only the steps that stayed stable.
+
+## Scorecard
+- **Impact:** 5/5
+- **Reliability:** 4/5
+- **Fit:** 5/5
+- **Complexity:** 3/5
+- **Cost:** 2/5
+- **Weighted Score:** 3.6
+
+## Score Rationale
+- **Impact:** High impact because a release campaign directly affects audience growth, email capture, and fan engagement.
+- **Reliability:** Reliable enough because humans approve creative voice before scheduling or sending anything outward.
+- **Fit:** Strong fit because the work is repeatable, content-heavy, and benefits from structured memory.
+- **Complexity:** Moderate complexity because it crosses Notion, Drive, Buffer, and Gmail but avoids custom software.
+- **Cost:** Low cost because the workflow uses common creator tools and lightweight automation.
+
+## Verdict
+BUILD NOW
+
+## Prompt Pack
+1. Turn this raw music-release idea into three short-form content angles. Preserve the artist's voice and label each angle by audience intent.
+2. Given this week's approved posts, build a release-week schedule that balances announcement, story, proof, and fan participation.
+3. Summarize fan replies into useful language for the next email. Draft one warm follow-up without sounding automated.

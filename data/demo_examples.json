@@ -1,0 +1,357 @@
+{
+  "musician_growth": {
+    "scenario": "Musician Growth",
+    "input_summary": "I am an independent musician with a new EP coming out. I have scattered ideas for TikToks, a half-built email list, a messy Google Drive, and no repeatable way to turn content into fan growth without spending every day online.",
+    "diagnosis": "The real problem is not content volume. It is the missing operating loop between creative ideas, campaign memory, scheduled execution, and human approval. The stack should turn messy release-week energy into a repeatable fan-growth machine without removing the artist's voice.",
+    "stack": {
+      "intelligence": [
+        "ChatGPT"
+      ],
+      "memory": [
+        "Notion",
+        "Google Drive"
+      ],
+      "orchestration": [
+        "Zapier"
+      ],
+      "execution": [
+        "Buffer",
+        "Gmail"
+      ],
+      "human_approval": [
+        "Notion approval field",
+        "Gmail draft review"
+      ]
+    },
+    "workflows": [
+      {
+        "name": "Content Idea Intake",
+        "trigger": "Artist drops rough captions, voice notes, lyrics, or links into a Notion inbox.",
+        "steps": [
+          "Classify the idea by release phase.",
+          "Generate three platform-specific angles.",
+          "Attach source files from Google Drive.",
+          "Mark each asset as draft, approved, or parked."
+        ],
+        "human_check": "Artist approves the angle in Notion before anything is scheduled."
+      },
+      {
+        "name": "Release Calendar Builder",
+        "trigger": "A Notion item moves to approved.",
+        "steps": [
+          "Convert the idea into a post brief.",
+          "Place it in the release calendar.",
+          "Prepare Buffer-ready captions.",
+          "Flag missing visuals or links."
+        ],
+        "human_check": "Artist reviews the weekly queue before Zapier pushes posts to Buffer."
+      },
+      {
+        "name": "Fan Follow-Up Loop",
+        "trigger": "A campaign post or email receives meaningful engagement.",
+        "steps": [
+          "Capture replies and comments.",
+          "Summarize recurring fan language.",
+          "Draft a warm email-list follow-up.",
+          "Store learning against the campaign record."
+        ],
+        "human_check": "Artist reviews Gmail drafts before sending."
+      }
+    ],
+    "implementation_steps": [
+      "Create a Notion database for ideas, assets, approvals, channels, and release phase.",
+      "Organize Google Drive folders by release, asset type, and final approval status.",
+      "Build a reusable ChatGPT prompt for turning raw ideas into campaign-ready briefs.",
+      "Connect Notion approved items to Buffer drafts through Zapier.",
+      "Create a Gmail draft workflow for engaged fans and email-list segments.",
+      "Run one release week manually, then automate only the steps that stayed stable."
+    ],
+    "scorecard": {
+      "impact": 5,
+      "reliability": 4,
+      "fit": 5,
+      "complexity": 3,
+      "cost": 2
+    },
+    "verdict": "",
+    "prompts": [
+      "Turn this raw music-release idea into three short-form content angles. Preserve the artist's voice and label each angle by audience intent.",
+      "Given this week's approved posts, build a release-week schedule that balances announcement, story, proof, and fan participation.",
+      "Summarize fan replies into useful language for the next email. Draft one warm follow-up without sounding automated."
+    ],
+    "score_rationales": {
+      "impact": "High impact because a release campaign directly affects audience growth, email capture, and fan engagement.",
+      "reliability": "Reliable enough because humans approve creative voice before scheduling or sending anything outward.",
+      "fit": "Strong fit because the work is repeatable, content-heavy, and benefits from structured memory.",
+      "complexity": "Moderate complexity because it crosses Notion, Drive, Buffer, and Gmail but avoids custom software.",
+      "cost": "Low cost because the workflow uses common creator tools and lightweight automation."
+    }
+  },
+  "solo_founder_ops": {
+    "scenario": "Solo Founder Ops",
+    "input_summary": "I am a solo founder juggling sales calls, customer follow-ups, product notes, and investor updates. Everything lives in my inbox and memory, so opportunities slip through the cracks when the week gets busy.",
+    "diagnosis": "The founder needs a lightweight operating system, not a full CRM overhaul. The highest-value move is to centralize commitments, next actions, and weekly narrative updates so follow-through becomes visible and repeatable.",
+    "stack": {
+      "intelligence": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "memory": [
+        "Notion",
+        "Google Drive"
+      ],
+      "orchestration": [
+        "Make"
+      ],
+      "execution": [
+        "Gmail",
+        "Google Calendar",
+        "Slack"
+      ],
+      "human_approval": [
+        "Notion approval field",
+        "Gmail draft review"
+      ]
+    },
+    "workflows": [
+      {
+        "name": "Commitment Capture",
+        "trigger": "A meeting ends or an important email thread changes.",
+        "steps": [
+          "Extract promised follow-ups.",
+          "Assign owner and due date.",
+          "Link the source note or email.",
+          "Place the action in a weekly operating board."
+        ],
+        "human_check": "Founder approves extracted commitments before reminders are activated."
+      },
+      {
+        "name": "Follow-Up Drafting",
+        "trigger": "A commitment is due within 24 hours.",
+        "steps": [
+          "Collect relevant notes.",
+          "Draft a concise update or ask.",
+          "Reference the last interaction.",
+          "Save the draft in Gmail."
+        ],
+        "human_check": "Founder edits and sends the Gmail draft."
+      },
+      {
+        "name": "Weekly Investor Narrative",
+        "trigger": "Friday morning calendar block begins.",
+        "steps": [
+          "Summarize shipped work.",
+          "Identify risks and asks.",
+          "Pull customer and sales highlights.",
+          "Draft a short update for stakeholders."
+        ],
+        "human_check": "Founder reviews and trims the narrative before sending."
+      }
+    ],
+    "implementation_steps": [
+      "Create a Notion operating board with people, commitments, status, due date, and source links.",
+      "Define the minimum fields that must be captured after every call or email.",
+      "Use Claude or ChatGPT to extract follow-ups from pasted notes and email snippets.",
+      "Build a Make scenario that turns approved commitments into calendar reminders and Gmail drafts.",
+      "Create a Friday investor-update template that pulls from the operating board.",
+      "Review the board every Monday and remove automations that create noise."
+    ],
+    "scorecard": {
+      "impact": 5,
+      "reliability": 4,
+      "fit": 5,
+      "complexity": 3,
+      "cost": 2
+    },
+    "verdict": "",
+    "prompts": [
+      "Extract commitments, owners, dates, and open questions from these founder notes. Return only actionable items.",
+      "Draft a concise follow-up email based on this last interaction. Keep it specific, warm, and low-friction.",
+      "Turn this week's operating board into a short investor update with wins, risks, asks, and next milestones."
+    ],
+    "score_rationales": {
+      "impact": "High impact because missed follow-ups and unclear commitments directly affect revenue and momentum.",
+      "reliability": "Reliable enough because the founder approves extracted commitments before reminders or drafts activate.",
+      "fit": "Strong fit because the problem is information routing, summarization, and repeatable operating cadence.",
+      "complexity": "Moderate complexity because email, calendar, notes, and stakeholder updates must stay synchronized.",
+      "cost": "Low cost because the system can run on existing productivity tools and simple automation."
+    }
+  },
+  "sales_prep": {
+    "scenario": "Sales Prep",
+    "input_summary": "Our small sales team needs better prep before discovery calls. Notes are spread across HubSpot, Gmail, and old docs, and reps waste time assembling context instead of asking sharper questions.",
+    "diagnosis": "The team is losing leverage before calls because account context is fragmented. The stack should produce a pre-call brief that is consistent enough to trust, narrow enough to scan, and tied directly to better discovery questions.",
+    "stack": {
+      "intelligence": [
+        "Gemini",
+        "ChatGPT"
+      ],
+      "memory": [
+        "Google Drive",
+        "Airtable"
+      ],
+      "orchestration": [
+        "Zapier"
+      ],
+      "execution": [
+        "HubSpot",
+        "Gmail",
+        "Google Calendar"
+      ],
+      "human_approval": [
+        "Slack approval message"
+      ]
+    },
+    "workflows": [
+      {
+        "name": "Account Context Assembly",
+        "trigger": "A discovery call appears on tomorrow's calendar.",
+        "steps": [
+          "Pull the HubSpot record.",
+          "Collect recent Gmail thread summaries.",
+          "Search Drive for related notes.",
+          "Create a one-page account brief."
+        ],
+        "human_check": "Rep confirms the brief is attached to the right account."
+      },
+      {
+        "name": "Discovery Question Builder",
+        "trigger": "An account brief is generated.",
+        "steps": [
+          "Identify likely pains.",
+          "Map pains to product value.",
+          "Write five call questions.",
+          "Rank questions by expected signal."
+        ],
+        "human_check": "Rep approves the final question set before the call."
+      },
+      {
+        "name": "Post-Call Next Step",
+        "trigger": "Call notes are added after the meeting.",
+        "steps": [
+          "Summarize buying signals.",
+          "Detect objections.",
+          "Draft the follow-up email.",
+          "Update next action in HubSpot."
+        ],
+        "human_check": "Rep reviews the Gmail draft and HubSpot update."
+      }
+    ],
+    "implementation_steps": [
+      "Define a standard pre-call brief format with account facts, context, risks, and questions.",
+      "Create an Airtable table that maps accounts to source links and prep status.",
+      "Connect Google Calendar events to a Zapier workflow that finds matching HubSpot records.",
+      "Use Gemini or ChatGPT to summarize account sources into the brief template.",
+      "Send the completed brief and question set to Slack for rep approval.",
+      "Track call outcomes for two weeks and adjust the prompt based on rep feedback."
+    ],
+    "scorecard": {
+      "impact": 4,
+      "reliability": 4,
+      "fit": 5,
+      "complexity": 3,
+      "cost": 3
+    },
+    "verdict": "",
+    "prompts": [
+      "Create a pre-call brief from this account data. Focus on current context, likely pain, open questions, and risks.",
+      "Generate five discovery questions that would produce useful buying-signal evidence for this account.",
+      "Summarize these call notes into buying signals, objections, next steps, and a draft follow-up email."
+    ],
+    "score_rationales": {
+      "impact": "Meaningful impact because better prep can improve discovery quality and follow-up relevance.",
+      "reliability": "Reliable when constrained to source-linked briefs and rep approval before customer-facing use.",
+      "fit": "Strong fit because sales prep is repeatable, context-heavy, and benefits from structured synthesis.",
+      "complexity": "Moderate complexity because account matching across CRM, email, calendar, and docs can be brittle.",
+      "cost": "Moderate cost because CRM and automation dependencies may already exist but require setup time."
+    }
+  },
+  "internal_reporting": {
+    "scenario": "Internal Reporting",
+    "input_summary": "Our internal reporting is slow and inconsistent. Each Friday people paste updates from Slack, spreadsheets, and meetings into a doc, then leadership still asks what changed and what needs attention.",
+    "diagnosis": "The reporting process is slow because status collection and executive synthesis are treated as the same task. The stack should separate structured update capture from leadership-ready interpretation.",
+    "stack": {
+      "intelligence": [
+        "Claude"
+      ],
+      "memory": [
+        "Airtable",
+        "Google Drive"
+      ],
+      "orchestration": [
+        "n8n"
+      ],
+      "execution": [
+        "Slack",
+        "Google Calendar"
+      ],
+      "human_approval": [
+        "Slack approval message",
+        "Notion approval field"
+      ]
+    },
+    "workflows": [
+      {
+        "name": "Structured Update Collection",
+        "trigger": "Thursday afternoon reminder posts in Slack.",
+        "steps": [
+          "Ask each owner for progress, blockers, metric changes, and decisions needed.",
+          "Normalize responses into Airtable.",
+          "Flag missing updates.",
+          "Link supporting docs from Drive."
+        ],
+        "human_check": "Team leads confirm their captured update before synthesis."
+      },
+      {
+        "name": "Leadership Brief Synthesis",
+        "trigger": "All required updates are received or the deadline passes.",
+        "steps": [
+          "Compare updates to last week.",
+          "Identify changes that matter.",
+          "Separate facts from interpretation.",
+          "Draft a concise leadership brief."
+        ],
+        "human_check": "Operations owner approves the brief in Slack."
+      },
+      {
+        "name": "Decision Follow-Through",
+        "trigger": "Leadership marks an item as decision needed.",
+        "steps": [
+          "Create a decision record.",
+          "Assign owner and due date.",
+          "Post the decision ask to Slack.",
+          "Carry unresolved items into next week's report."
+        ],
+        "human_check": "Decision owner confirms the action before it enters the next cycle."
+      }
+    ],
+    "implementation_steps": [
+      "Define the reporting fields that every team must submit each week.",
+      "Create an Airtable base for weekly updates, source links, blockers, and decision requests.",
+      "Build an n8n workflow that posts Slack reminders and writes responses to Airtable.",
+      "Use Claude to turn structured records into a leadership brief with facts, changes, risks, and asks.",
+      "Add Slack approval before the final report is shared.",
+      "Run two manual reporting cycles before automating carryover decisions."
+    ],
+    "scorecard": {
+      "impact": 4,
+      "reliability": 4,
+      "fit": 4,
+      "complexity": 3,
+      "cost": 2
+    },
+    "verdict": "",
+    "prompts": [
+      "Normalize these weekly updates into progress, blockers, metric changes, decisions needed, and source links.",
+      "Compare this week's updates to last week's report and identify only the changes leadership should care about.",
+      "Draft a concise leadership report with facts, interpretation, risks, decisions needed, and unresolved carryovers."
+    ],
+    "score_rationales": {
+      "impact": "Meaningful impact because faster reporting reduces leadership ambiguity and repeated status questions.",
+      "reliability": "Reliable when updates are structured first and team leads approve before synthesis.",
+      "fit": "Good fit because reporting needs normalization, comparison, and concise executive interpretation.",
+      "complexity": "Moderate complexity because multiple teams, missing updates, and carryover decisions add process risk.",
+      "cost": "Low cost because Slack, Airtable, Drive, and n8n can support the workflow without custom infrastructure."
+    }
+  }
+}

@@ -1,0 +1,12 @@
+$ /Users/joshuabloodworth/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 evals/run_evals.py
+exit_code: 0
+
+## stdout
+PASS musician_growth
+PASS solo_founder_ops
+PASS sales_prep
+PASS internal_reporting
+
+4/4 evals passed
+
+## stderr

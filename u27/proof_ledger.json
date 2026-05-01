@@ -40,6 +40,42 @@
       "note": "",
       "recorded_at": "2026-05-01T01:09:20+00:00",
       "status": "pass"
+    },
+    {
+      "case_id": "core-cli-acceptance",
+      "claim": "Stack Engine can convert saved operational goals into scored AI workflow architecture artifacts.",
+      "command": "/Users/joshuabloodworth/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -m unittest discover -s tests",
+      "evidence": [
+        "u27/evidence/run-0004.txt"
+      ],
+      "id": "run-0004",
+      "note": "",
+      "recorded_at": "2026-05-01T03:11:34+00:00",
+      "status": "pass"
+    },
+    {
+      "case_id": "first-use-demo",
+      "claim": "Stack Engine's saved demo command runs without requiring an API key.",
+      "command": "/Users/joshuabloodworth/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 stack_engine.py --example musician --saved",
+      "evidence": [
+        "u27/evidence/run-0005.txt"
+      ],
+      "id": "run-0005",
+      "note": "",
+      "recorded_at": "2026-05-01T03:11:45+00:00",
+      "status": "pass"
+    },
+    {
+      "case_id": "eval-runner",
+      "claim": "Stack Engine's eval runner completes against the repository eval cases.",
+      "command": "/Users/joshuabloodworth/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 evals/run_evals.py",
+      "evidence": [
+        "u27/evidence/run-0006.txt"
+      ],
+      "id": "run-0006",
+      "note": "",
+      "recorded_at": "2026-05-01T03:11:57+00:00",
+      "status": "pass"
     }
   ],
   "schema_version": "0.1"

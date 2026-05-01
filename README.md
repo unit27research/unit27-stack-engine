@@ -4,6 +4,19 @@ Stack Engine converts ambiguous operational goals into scored AI workflow archit
 
 Read [DESIGN_NOTES.md](DESIGN_NOTES.md) for the system philosophy, tradeoffs, failure modes, and eval rationale.
 
+## Why Use It
+
+Use Stack Engine before building an AI workflow when the goal is still fuzzy and the real decision is what to build, what to keep manual, and which stack fits the work.
+
+It is useful when a project idea sounds promising but needs a scored architecture, concrete implementation plan, and decision artifact before code or automation work starts.
+
+Example:
+
+```text
+Problem: "We should automate this" is too vague to build from.
+Result: Stack Engine returns a scored workflow architecture and a build/manual/later verdict.
+```
+
 ## What It Does
 
 Stack Engine takes one messy paragraph and returns a decision artifact:

@@ -87,6 +87,10 @@ python -m unittest discover -s tests
 python evals/run_evals.py
 ```
 
+## Reliability
+
+Stack Engine is maintained as part of the Unit27 research toolchain. The local verification contract is the unit test suite plus deterministic eval runner.
+
 ## Project Structure
 
 ```text

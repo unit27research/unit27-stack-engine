@@ -1,5 +1,7 @@
 # U27-S02 // Stack Engine
 
+[![CI](https://github.com/unit27research/unit27-stack-engine/actions/workflows/ci.yml/badge.svg)](https://github.com/unit27research/unit27-stack-engine/actions/workflows/ci.yml)
+
 Stack Engine converts ambiguous operational goals into scored AI workflow architectures.
 
 Read [DESIGN_NOTES.md](DESIGN_NOTES.md) for the system philosophy, tradeoffs, failure modes, and eval rationale.
@@ -102,7 +104,7 @@ python evals/run_evals.py
 
 ## Reliability
 
-Stack Engine is maintained as part of the Unit27 research toolchain. The local verification contract is the unit test suite plus deterministic eval runner.
+Stack Engine is maintained as part of the Unit27 research toolchain. CI verifies the unit test suite and deterministic eval runner before changes are considered ready.
 
 ## Project Structure
 

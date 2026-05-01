@@ -1,0 +1,15 @@
+{
+  "findings": [],
+  "generated_at": "2026-05-01T01:16:27+00:00",
+  "proof_cases": [
+    "core-cli-acceptance",
+    "eval-runner",
+    "first-use-demo"
+  ],
+  "schema_version": "0.1",
+  "source": "README.md",
+  "summary": {
+    "unsupported_claims": 0,
+    "verified_claims": 3
+  }
+}

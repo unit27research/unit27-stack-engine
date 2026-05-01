@@ -1,0 +1,27 @@
+[
+  {
+    "claim": "Stack Engine can convert saved operational goals into scored AI workflow architecture artifacts.",
+    "expected": "The unittest suite passes, covering saved examples, markdown rendering, deterministic scoring, and schema-backed output behavior.",
+    "id": "core-cli-acceptance",
+    "limits": [
+      "This evidence covers saved examples and deterministic local paths only.",
+      "It does not prove OpenAI API generation quality or every possible user input."
+    ]
+  },
+  {
+    "claim": "Stack Engine's saved demo command runs without requiring an API key.",
+    "expected": "The saved musician example exits 0 and renders a decision artifact from canonical saved data.",
+    "id": "first-use-demo",
+    "limits": [
+      "Saved demo evidence proves the offline first-use path only."
+    ]
+  },
+  {
+    "claim": "Stack Engine's eval runner completes against the repository eval cases.",
+    "expected": "The evals/run_evals.py command exits 0 in the current checkout.",
+    "id": "eval-runner",
+    "limits": [
+      "Eval evidence covers the local eval cases only; it does not certify universal workflow recommendations."
+    ]
+  }
+]

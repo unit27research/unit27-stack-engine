@@ -6,6 +6,22 @@ Stack Engine converts ambiguous operational goals into scored AI workflow archit
 
 Read [DESIGN_NOTES.md](DESIGN_NOTES.md) for the system philosophy, tradeoffs, failure modes, and eval rationale.
 
+```text
+U27-S02
+STACK ENGINE
+
+CLASS: SYSTEM
+FUNCTION: Workflow Architecture + Decision Scoring
+REF_ID: STACK-ENGINE-01
+```
+
+## Release Status
+
+`SOURCE_STATUS: PUBLIC_PACKAGE`
+`ACCESS_STATUS: CLEARED_FOR_EXTERNAL_USE`
+
+This repository is a released Unit27 field kit: visible, inspectable, and intended for orientation, testing, and practical use. Controlled protocol materials remain outside this source package.
+
 ## Why Use It
 
 Use Stack Engine before building an AI workflow when the goal is still fuzzy and the real decision is what to build, what to keep manual, and which stack fits the work.
@@ -104,7 +120,7 @@ python evals/run_evals.py
 
 ## Reliability
 
-Stack Engine is maintained as part of the Unit27 research toolchain. CI verifies the unit test suite and deterministic eval runner before changes are considered ready.
+Stack Engine is released as part of the Unit27 public tooling channel. CI verifies the unit test suite and deterministic eval runner before changes are considered ready.
 
 ## Project Structure
 

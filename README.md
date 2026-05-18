@@ -22,6 +22,10 @@ REF_ID: STACK-ENGINE-01
 
 This repository is a released Unit27 field kit: visible, inspectable, and intended for orientation, testing, and practical use. Controlled protocol materials remain outside this source package.
 
+It answers one narrow question:
+
+> What AI workflow architecture should be built, delayed, kept manual, or rejected?
+
 ## Why Use It
 
 Use Stack Engine before building an AI workflow when the goal is still fuzzy and the real decision is what to build, what to keep manual, and which stack fits the work.
@@ -52,7 +56,11 @@ It is designed to feel like a decision engine, not a chatbot.
 
 ## Install
 
+The current public release is GitHub-first. Run it from a local checkout:
+
 ```bash
+git clone https://github.com/unit27research/unit27-stack-engine
+cd unit27-stack-engine
 pip install -r requirements.txt
 ```
 
@@ -110,6 +118,25 @@ Verdicts:
 - Score rationale and tradeoff explanation
 - System thinking
 - Validation repair for malformed model output
+
+## System Position
+
+```text
+Stack Engine -> Context Engine -> Handoff Engine -> Eval Bench -> Proof Ledger -> Boundary Engine -> u27-check
+```
+
+Stack Engine sits first in the operating sequence. It shapes the work before repository context is packaged, handoff packets are written, evals are run, proof is recorded, public claims are checked, or launch paths are tested.
+
+## What It Does Not Do
+
+Stack Engine does not:
+
+1. Package repository context
+2. Generate agent handoff packets
+3. Run implementation evals
+4. Record durable proof
+5. Check public claims
+6. Perform launch QA
 
 ## Verify
 

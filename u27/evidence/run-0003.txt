@@ -1,4 +1,4 @@
-$ /bin/zsh -lc '/Users/joshuabloodworth/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 evals/run_evals.py'
+$ /bin/zsh -lc 'python3 evals/run_evals.py'
 exit_code: 0
 
 ## stdout

@@ -1,4 +1,4 @@
-$ /bin/zsh -lc '/Users/joshuabloodworth/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -m unittest discover -s tests'
+$ /bin/zsh -lc 'python3 -m unittest discover -s tests'
 exit_code: 0
 
 ## stdout

@@ -11,7 +11,7 @@ U27-S02
 STACK ENGINE
 
 CLASS: SYSTEM
-OPERATING_POSITION: 01/07
+OPERATING_POSITION: 01/08
 FUNCTION: Workflow Architecture + Decision Scoring
 REF_ID: U27-S02-STACK-ENGINE
 ```
@@ -123,10 +123,10 @@ Verdicts:
 ## System Position
 
 ```text
-Stack Engine -> Context Engine -> Handoff Engine -> Eval Bench -> Proof Ledger -> Boundary Engine -> u27-check
+Stack Engine -> Context Engine -> Knowledge Readiness -> Handoff Engine -> Eval Bench -> Proof Ledger -> Boundary Engine -> u27-check
 ```
 
-Stack Engine sits first in the operating sequence. It shapes the work before repository context is packaged, handoff packets are written, evals are run, proof is recorded, public claims are checked, or launch paths are tested.
+Stack Engine sits first in the operating sequence. It shapes the work before repository context is packaged, knowledge status is classified, handoff packets are written, evals are run, proof is recorded, public claims are checked, or launch paths are tested.
 
 ## What It Does Not Do
 

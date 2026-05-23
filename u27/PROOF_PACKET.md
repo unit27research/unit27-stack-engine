@@ -7,17 +7,17 @@ Generated: 2026-05-01T03:12:09+00:00
 
 - Stack Engine can convert saved operational goals into scored AI workflow architecture artifacts.
   - Case: `core-cli-acceptance`
-  - Command: `/Users/joshuabloodworth/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -m unittest discover -s tests`
+  - Command: `python3 -m unittest discover -s tests`
   - Evidence: `u27/evidence/run-0004.txt`
 
 - Stack Engine's saved demo command runs without requiring an API key.
   - Case: `first-use-demo`
-  - Command: `/Users/joshuabloodworth/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 stack_engine.py --example musician --saved`
+  - Command: `python3 stack_engine.py --example musician --saved`
   - Evidence: `u27/evidence/run-0005.txt`
 
 - Stack Engine's eval runner completes against the repository eval cases.
   - Case: `eval-runner`
-  - Command: `/Users/joshuabloodworth/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 evals/run_evals.py`
+  - Command: `python3 evals/run_evals.py`
   - Evidence: `u27/evidence/run-0006.txt`
 
 ## Open Failures

@@ -8,7 +8,7 @@
     {
       "case_id": "core-cli-acceptance",
       "claim": "Stack Engine can convert saved operational goals into scored AI workflow architecture artifacts.",
-      "command": "/bin/zsh -lc '/Users/joshuabloodworth/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -m unittest discover -s tests'",
+      "command": "/bin/zsh -lc 'python3 -m unittest discover -s tests'",
       "evidence": [
         "u27/evidence/run-0001.txt"
       ],
@@ -20,7 +20,7 @@
     {
       "case_id": "first-use-demo",
       "claim": "Stack Engine's saved demo command runs without requiring an API key.",
-      "command": "/bin/zsh -lc '/Users/joshuabloodworth/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 stack_engine.py --example musician --saved'",
+      "command": "/bin/zsh -lc 'python3 stack_engine.py --example musician --saved'",
       "evidence": [
         "u27/evidence/run-0002.txt"
       ],
@@ -32,7 +32,7 @@
     {
       "case_id": "eval-runner",
       "claim": "Stack Engine's eval runner completes against the repository eval cases.",
-      "command": "/bin/zsh -lc '/Users/joshuabloodworth/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 evals/run_evals.py'",
+      "command": "/bin/zsh -lc 'python3 evals/run_evals.py'",
       "evidence": [
         "u27/evidence/run-0003.txt"
       ],
@@ -44,7 +44,7 @@
     {
       "case_id": "core-cli-acceptance",
       "claim": "Stack Engine can convert saved operational goals into scored AI workflow architecture artifacts.",
-      "command": "/Users/joshuabloodworth/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -m unittest discover -s tests",
+      "command": "python3 -m unittest discover -s tests",
       "evidence": [
         "u27/evidence/run-0004.txt"
       ],
@@ -56,7 +56,7 @@
     {
       "case_id": "first-use-demo",
       "claim": "Stack Engine's saved demo command runs without requiring an API key.",
-      "command": "/Users/joshuabloodworth/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 stack_engine.py --example musician --saved",
+      "command": "python3 stack_engine.py --example musician --saved",
       "evidence": [
         "u27/evidence/run-0005.txt"
       ],
@@ -68,7 +68,7 @@
     {
       "case_id": "eval-runner",
       "claim": "Stack Engine's eval runner completes against the repository eval cases.",
-      "command": "/Users/joshuabloodworth/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 evals/run_evals.py",
+      "command": "python3 evals/run_evals.py",
       "evidence": [
         "u27/evidence/run-0006.txt"
       ],

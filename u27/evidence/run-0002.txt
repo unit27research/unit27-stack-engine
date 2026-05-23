@@ -1,4 +1,4 @@
-$ /bin/zsh -lc '/Users/joshuabloodworth/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 stack_engine.py --example musician --saved'
+$ /bin/zsh -lc 'python3 stack_engine.py --example musician --saved'
 exit_code: 0
 
 ## stdout
